@@ -27,12 +27,7 @@
 }
 
 .nav_logo:hover{
-    background: url('https://res.cloudinary.com/ddffgfse1/image/upload/v1692726745/Kundan_black_logo.png');
     border-radius: 10%;
-    width: 4rem;
-    aspect-ratio: 4/4;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .nav_option{
