@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <div class="app">
+        <nav class="navbar">
+          <button class="log">Kundan</button>
+          <ul class="nav_links">
+            <li class="Home"><a href="#Home">Home</a></li>
+            <li class="About"><a href="#About">About</a></li>
+            <li class="Work"><a href="#Work">Work</a></li>
+            <li class="Skills"><a href="#Skills">Skills</a></li>
+            <li class="Contact"><a href="#Contact">Contact</a></li>
+          </ul>
+          <button class="nav_menu_icon">
+            <i class="fa-solid fa-bars"></i>
+            <!-- <ul class="nav_menu_link">
+                <li class="Home"><a href="#Home">Home</a></li>
+                <li class="About"><a href="#About">About</a></li>
+                <li class="Work"><a href="#Work">Work</a></li>
+                <li class="Skills"><a href="#Skills">Skills</a></li>
+                <li class="Contact"><a href="#Contact">Contact</a></li>
+              </ul> -->
+          </button>
+        </nav>
+        <section id="Home"></section>
+        <section id="About">
+          <h2 class="title_of_page">About</h2>
+        </section>
+        <section id="Work">
+          <h2 class="title_of_page">Work</h2>
+        </section>
+        <section id="Skills">
+          <h2 class="title_of_page">Skills</h2>
+        </section>
+        <section id="Contact" class="flex-col h-auto items-center">
+          <h2 class="title_of_page">Contact</h2>
+          <div class="contact_data flex">
+            <div class="card w-1/2">
+              <p class="text-xl">Get In Touch</p>
+              <p>
+                If you like my work and have some cool project to work on, just
+                send me direct message or contact me through social sites listed
+                below.
+              </p>
+              <p>
+                <!--  direction logo -->
+                Ahmedabad,Gujarat
+              </p>
+              <p>
+                <!--  Email logo -->
+                kundanpatel2211@gmail.com
+              </p>
+              <p>
+                <!-- Phone logo-->
+                +91 8530823682
+              </p>
+            </div>
+            <div class="card w-1/2 justify-center items-center">
+              <p class="text-xl">Leave A Message</p>
+              <form action="" method="post" class="flex flex-col gap-5">
+                <label for="name">
+                  <input type="text" />
+                </label>
+                <label for="mobile">
+                  <input type="number" name="" id="" />
+                </label>
+                <label for="email">
+                  <input type="email" name="" id="" />
+                </label>
+                <label for="Subject">
+                  <input type="text" />
+                </label>
+                <label for="Description">
+                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                </label>
+              </form>
+            </div>
+          </div>
+          <h2 class="text-xl text-center font-bold uppercase">
+            Get In Touch by
+          </h2>
+          <!-- Footer -->
+          <div className="flex items-center gap-10 mt-10">
+            <a href="https://twitter.com/Kunds2211" target="_blank">
+              <i class="fa-brands fa-square-x-twitter fa-3x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/kundanpattel/" target="_blank">
+              <i class="fa-brands fa-linkedin fa-3x"></i>
+            </a>
+            <a href="https://github.com/Kunds-patel" target="_blank">
+              <i class="fa-brands fa-square-github fa-3x"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fa-brands fa-square-instagram fa-3x"></i>
+            </a>
+          </div>
+          <div className="text-gray-700 text-center h-14">
+            Copyright © 2023 Kundan Patel. All Rights Reserved.
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

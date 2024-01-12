@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 255, 236, 232;
+    --color-secondary: 198, 104, 108;
+  }
+}
+
+@layer components {
+  .title_of_page {
+    @apply text-3xl text-center font-extrabold;
+  }
+}
+
+/* npx tailwindcss -i ./src/style.css -o ./src/output.css --watch */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply max-w-7xl m-auto bg-primary text-secondary;
+}
+
+.navbar {
+  @apply max-w-7xl justify-between w-full p-4 fixed flex items-center bg-[#edd5d0];
+}
+
+.log {
+  font-family: "Bungee Inline", sans-serif;
+  @apply md:text-5xl text-4xl text-secondary;
+}
+
+.nav_links {
+  @apply gap-10 hidden md:flex;
+}
+
+.nav_menu_icon {
+  @apply md:hidden;
+}
+
+section {
+  @apply h-screen;
+  @apply flex justify-center;
+}
