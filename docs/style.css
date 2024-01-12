@@ -15,7 +15,7 @@
   }
 }
 
-/* npx tailwindcss -i ./src/style.css -o ./src/output.css --watch */
+/* npx tailwindcss -i ./docs/style.css -o ./docs/output.css --watch */
 * {
   margin: 0;
   padding: 0;
