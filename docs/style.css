@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  @apply max-w-7xl m-auto bg-primary text-secondary;
+  @apply max-w-7xl mx-auto bg-primary text-secondary;
 }
 
 .navbar {
