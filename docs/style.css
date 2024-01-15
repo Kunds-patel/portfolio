@@ -72,6 +72,13 @@ section {
   }
 }
 
+.card_container {
+  @apply grid lg:grid-cols-3 md:grid-cols-2 justify-items-center items-center h-full;
+}
+
+.card {
+  @apply bg-black;
+}
 .skill {
   @apply flex flex-col items-center justify-end h-1/2 w-4/5 gap-4 text-2xl;
   @apply border border-secondary rounded-xl pb-2;
