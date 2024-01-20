@@ -41,7 +41,7 @@
           </button>
         </nav>
         <section id="hero"></section>
-        <section id="About">
+        <section id="About" class="justify-evenly">
           <h2 class="title_of_page">About</h2>
           <div class="about_hero md:flex m-10 h-full items-center">
             <div class="about_detail md:w-1/2 text-justify">
@@ -190,10 +190,12 @@
         </section>
         <section id="Skills">
           <h2 class="title_of_page">Skills & Education</h2>
-          <div class="details flex h-full md:flex-row flex-col">
-            <div class="skills_details md:w-1/2 w-full h-full">
+          <div
+            class="details flex min-h-[500px] lg:flex-row flex-col items-center"
+          >
+            <div class="skills_details lg:w-1/2">
               <div
-                class="grid gap-3 lg:grid-cols-4 grid-cols-2 justify-items-center items-center min-h-full"
+                class="grid gap-4 xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-4 grid-cols-2 justify-items-center items-center"
               >
                 <div class="skill">
                   <i class="fa-brands fa-html5 fa-3x"></i>
@@ -277,7 +279,7 @@
             <div
               class="Education_details md:w-1/2 w-full h-full flex items-center"
             >
-              <div class="vl ml-6 border-l-4 border-secondary h-4/5"></div>
+              <div class="ml-6 md:border-l-4 border-secondary h-4/5"></div>
             </div>
           </div>
         </section>

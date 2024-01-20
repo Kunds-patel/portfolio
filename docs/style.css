@@ -13,7 +13,7 @@
 
 @layer components {
   .title_of_page {
-    @apply text-3xl text-center font-extrabold;
+    @apply text-3xl text-center font-extrabold mb-3;
   }
 }
 
@@ -32,6 +32,9 @@ body {
   @apply max-w-7xl mx-auto bg-primary text-secondary;
 }
 
+#root {
+  @apply mx-4;
+}
 .navbar {
   @apply max-w-7xl justify-between w-full p-4 fixed flex items-center bg-[#edd5d0];
 }
@@ -80,7 +83,7 @@ section {
   @apply max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700;
 
   & a > img {
-    @apply rounded-t-lg;
+    @apply rounded-t-lg h-80 w-full object-cover object-top;
   }
 
   & > div {
@@ -99,7 +102,7 @@ section {
 }
 
 .skill {
-  @apply flex flex-col items-center justify-end w-4/5 md:h-5/6 gap-4 text-2xl;
+  @apply flex flex-col items-center justify-end w-32 h-[132px] gap-4 text-2xl;
   @apply border border-secondary rounded-xl pb-2;
 
   &:hover {
