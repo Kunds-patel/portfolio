@@ -704,21 +704,15 @@ body {
   color: rgba(var(--color-secondary), var(--tw-text-opacity));
 }
 
-#root {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .navbar {
   position: fixed;
   display: flex;
   width: 100%;
   max-width: 80rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   --tw-bg-opacity: 1;
   background-color: rgb(237 213 208 / var(--tw-bg-opacity));
-  padding: 1rem;
 }
 
 .log {
@@ -752,6 +746,8 @@ body {
 }
 
 section {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   min-height: 100vh;
   padding-top: 5rem;
   display: flex;
@@ -995,10 +991,6 @@ section {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .md\:border-l-4 {
     border-left-width: 4px;
   }
@@ -1007,10 +999,6 @@ section {
 @media (min-width: 1024px) {
   .lg\:w-1\/2 {
     width: 50%;
-  }
-
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-2 {

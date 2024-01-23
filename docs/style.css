@@ -32,11 +32,8 @@ body {
   @apply max-w-7xl mx-auto bg-primary text-secondary;
 }
 
-#root {
-  @apply mx-4;
-}
 .navbar {
-  @apply max-w-7xl justify-between w-full p-4 fixed flex items-center bg-[#edd5d0];
+  @apply max-w-7xl justify-evenly w-full fixed flex items-center bg-[#edd5d0];
 }
 
 .log {
@@ -53,7 +50,7 @@ body {
 }
 
 section {
-  @apply min-h-screen pt-20;
+  @apply min-h-screen pt-20 mx-2;
   @apply flex flex-col;
 }
 
