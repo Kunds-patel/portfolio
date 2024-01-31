@@ -22,9 +22,9 @@
       <div class="app">
         <nav class="navbar">
           <button class="log">Kundan</button>
-          <button class="nav_menu_icon">
+          <a class="nav_menu_icon">
             <i class="fa-solid fa-bars"></i>
-          </button>
+          </a>
           <ul class="nav_links">
             <li class="Home"><a href="#Home">Home</a></li>
             <li class="About"><a href="#About">About</a></li>
@@ -131,7 +131,7 @@
                 <a href="#" class="card_link"> Live </a>
               </div>
             </div>
-            <!-- Project 4 -->
+            <!-- Project 4
             <div class="card">
               <a href="#">
                 <img
@@ -153,7 +153,7 @@
                 <a href="#" class="card_link"> Live </a>
               </div>
             </div>
-            <!-- Project 5 -->
+            Project 5
             <div class="card">
               <a href="#">
                 <img
@@ -175,7 +175,7 @@
                 <a href="#" class="card_link"> Live </a>
               </div>
             </div>
-            <!-- Project 6 -->
+            Project 6
             <div class="card">
               <a href="#">
                 <img
@@ -196,7 +196,7 @@
                 <a href="#" class="card_link"> GitHub Link </a>
                 <a href="#" class="card_link"> Live </a>
               </div>
-            </div>
+            </div> -->
           </div>
         </section>
         <section id="Skills">
@@ -296,8 +296,8 @@
         </section>
         <section id="Contact">
           <h2 class="title_of_page">Contact</h2>
-          <div class="contact_data flex">
-            <div class="w-1/2">
+          <div class="contact_data md:flex">
+            <div class="contact_box">
               <p class="text-xl">Get In Touch</p>
               <p>
                 If you like my work and have some cool project to work on, just
@@ -317,24 +317,62 @@
                 +91 8530823682
               </p>
             </div>
-            <div class="w-1/2 justify-center items-center">
+            <div class="justify-center items-center contact_box">
               <p class="text-xl">Leave A Message</p>
               <form action="" method="post" class="flex flex-col gap-5">
-                <label for="name">
-                  <input type="text" />
+                <label for="name" class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Name"
+                    required
+                    class="form-control"
+                  />
                 </label>
-                <label for="mobile">
-                  <input type="number" name="" id="" />
+                <label for="mobile" class="form-group">
+                  <input
+                    type="tel"
+                    name="mobile"
+                    id="mobile"
+                    placeholder="Mobile"
+                    pattern="[789][0-9]{9}"
+                    required
+                    class="form-control"
+                  />
                 </label>
-                <label for="email">
-                  <input type="email" name="" id="" />
+                <label for="email" class="form-group">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                    required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    class="form-control"
+                  />
                 </label>
-                <label for="Subject">
-                  <input type="text" />
+                <label for="Subject" class="form-group">
+                  <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    required
+                    class="form-control"
+                  />
                 </label>
-                <label for="Description">
-                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                <label for="Description" class="form-group">
+                  <textarea
+                    name="description"
+                    id="description"
+                    placeholder="Description"
+                    rows="3"
+                    required
+                    class="form-control"
+                  ></textarea>
                 </label>
+                <button type="submit" class="s_btn">Send</button>
               </form>
             </div>
           </div>

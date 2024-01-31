@@ -8,6 +8,10 @@
     /* #FFECE8 */
     --color-secondary: 198, 104, 108;
     /* #C6686C */
+    --color-kunds: 240, 199, 191;
+    /* #F0C7BF */
+    --color-kb: 196, 90, 95;
+    /* #c45a5f */
   }
 }
 
@@ -17,7 +21,6 @@
   }
 }
 
-/* npx tailwindcss -i ./docs/style.css -o ./docs/output.css --watch */
 * {
   margin: 0;
   padding: 0;
@@ -73,11 +76,11 @@ section {
 }
 
 .card_container {
-  @apply grid gap-3 lg:grid-cols-3 md:grid-cols-2 justify-items-center items-center h-full;
+  @apply mx-5 grid gap-3 lg:grid-cols-3 md:grid-cols-2 justify-items-center items-center h-full;
 }
 
 .card {
-  @apply max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700;
+  @apply max-w-sm bg-secondary border border-secondary rounded-lg shadow;
 
   & a > img {
     @apply rounded-t-lg h-80 w-full object-cover object-top;
@@ -86,14 +89,14 @@ section {
   & > div {
     @apply p-5;
     & a > .card_title {
-      @apply mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white;
+      @apply mb-2 text-2xl font-bold tracking-tight text-primary;
     }
 
     & > p {
-      @apply mb-3 font-normal text-gray-700 dark:text-gray-400;
+      @apply mb-3 font-normal text-primary;
     }
     & > .card_link {
-      @apply inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+      @apply inline-flex items-center px-3 py-2 text-sm font-medium text-center text-secondary bg-primary rounded-lg hover:bg-secondary focus:ring-4 focus:outline-none focus:ring-blue-300;
     }
   }
 }
@@ -104,9 +107,31 @@ section {
 
   &:hover {
     @apply bg-secondary text-primary;
+    & > svg {
+      @apply fill-primary;
+    }
   }
+}
 
-  &:hover > svg {
-    @apply fill-primary;
+.contact_box {
+  @apply md:w-1/2 p-[8%];
+}
+.form-control {
+  @apply h-11 w-full px-2 py-3 text-base border border-solid border-secondary text-secondary;
+  transition-duration: 0.15s, 0.15s;
+  transition-timing-function: ease-in-out, ease-in-out;
+  transition-delay: 0s, 0s;
+  transition-property: border-color, box-shadow;
+  &:focus {
+    @apply border-primary shadow-lg;
+    outline: none;
   }
+}
+
+textarea.form-control {
+  @apply h-24;
+}
+
+.s_btn {
+  @apply w-min px-7 rounded-3xl shadow-md shadow-secondary cursor-grab h-11 bg-secondary text-primary;
 }
