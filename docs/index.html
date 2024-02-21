@@ -21,10 +21,13 @@
     <div id="root">
       <div class="app">
         <nav class="navbar">
-          <button class="log">Kundan</button>
-          <a class="nav_menu_icon">
+          <a href="" class="log">Kundan</a>
+          <a href="" class="nav_menu_icon" onclick="nav()">
             <i class="fa-solid fa-bars"></i>
           </a>
+          <script>
+            function nav() {}
+          </script>
           <ul class="nav_links">
             <li class="Home"><a href="#Home">Home</a></li>
             <li class="About"><a href="#About">About</a></li>
@@ -202,7 +205,7 @@
         <section id="Skills">
           <h2 class="title_of_page">Skills & Education</h2>
           <div
-            class="details flex min-h-[500px] lg:flex-row flex-col items-center"
+            class="details flex min-h-[400px] lg:flex-row flex-col items-center"
           >
             <div class="skills_details lg:w-1/2">
               <div
@@ -218,7 +221,7 @@
                 </div>
                 <div class="skill">
                   <svg
-                    fill="#C6686C"
+                    fill="#6E57E0"
                     width="4em"
                     height="4em"
                     viewBox="0 0 24 24"
@@ -252,7 +255,7 @@
                     viewBox="0,0,256,256"
                     width="4em"
                     height="4em"
-                    fill="#c6686c"
+                    fill="#6E57E0"
                   >
                     <g
                       fill-rule="nonzero"
@@ -290,34 +293,71 @@
             <div
               class="Education_details md:w-1/2 w-full h-full flex items-center"
             >
-              <div class="ml-6 md:border-l-4 border-secondary h-4/5"></div>
+              <div class="ml-6 md:border-l-4 border-secondary h-4/5">
+                <div>
+                  <div>
+                    <h2>Nishan Vidhyalay</h2>
+                    <p>10th GSEB</p>
+                  </div>
+                  <div>
+                    <h3>Aug. 2007 -- May 2018</h3>
+                    <p></p>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <h2>Mangaldeep Higher Secondary</h2>
+                    <p>12th GSEB</p>
+                  </div>
+                  <div>
+                    <h3>Aug. 2018 -- May 2020</h3>
+                    <p></p>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <h2>Ahmedabad Institute of Technology</h2>
+                    <p>Bachelor of Engineering, Information Technology</p>
+                  </div>
+                  <div>
+                    <h3>Aug. 2020 -- May 2024</h3>
+                    <p>CGPA</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
         <section id="Contact">
           <h2 class="title_of_page">Contact</h2>
-          <div class="contact_data md:flex">
-            <div class="contact_box">
+          <div class="contact_data">
+            <div class="contact_box rounded-s-3xl">
               <p class="text-xl">Get In Touch</p>
               <p>
                 If you like my work and have some cool project to work on, just
                 send me direct message or contact me through social sites listed
                 below.
               </p>
-              <p>
-                <!--  direction logo -->
+              <div class="contact_details">
+                <p>
+                  <i class="fa-solid fa-diamond-turn-right fa-1x"></i>
+                </p>
                 Ahmedabad,Gujarat
-              </p>
-              <p>
-                <!--  Email logo -->
+              </div>
+              <div class="contact_details">
+                <p>
+                  <i class="fa-solid fa-envelope fa-1x"></i>
+                </p>
                 kundanpatel2211@gmail.com
-              </p>
-              <p>
-                <!-- Phone logo-->
+              </div>
+              <div class="contact_details">
+                <p>
+                  <i class="fa-solid fa-mobile-screen-button fa-1x"></i>
+                </p>
                 +91 8530823682
-              </p>
+              </div>
             </div>
-            <div class="justify-center items-center contact_box">
+            <div class="justify-center items-center contact_box rounded-e-3xl">
               <p class="text-xl">Leave A Message</p>
               <form action="" method="post" class="flex flex-col gap-5">
                 <label for="name" class="form-group">
