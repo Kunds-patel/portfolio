@@ -36,7 +36,7 @@ body {
 }
 
 .navbar {
-  @apply max-w-7xl justify-evenly w-full fixed flex items-center bg-primary shadow-md shadow-white;
+  @apply max-w-7xl justify-between w-full fixed flex items-center bg-primary shadow-md shadow-white px-10;
 }
 
 .log {
@@ -61,45 +61,49 @@ section {
 }
 
 .bubble_bg {
-  @apply rounded-full -z-10;
-  transform: perspective(800px) rotateY(-8deg);
-  transition: transform 1s ease 0s;
-  box-shadow: rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
-    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
-    rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+  @apply rounded-full -z-10 overflow-hidden;
+  transform: perspective(800px) rotateY(0deg);
+  transition: transform 2s ease 0s;
   background: rgb(255, 236, 232);
   background: linear-gradient(
     155deg,
-    rgba(255, 236, 232, 1) 0%,
-    rgba(198, 104, 108, 1) 100%
+    rgba(25, 22, 39, 40) 0%,
+    rgba(300, 300, 300, 40) 100%
   );
-  &:hover {
-    transform: perspective(800px) rotateY(-4deg);
+  animation: rotate 25s infinite;
+}
+
+@keyframes rotate {
+  50% {
+    transform: perspective(800px) rotateY(180deg);
+  }
+  100% {
+    transform: perspective(800px) rotateY(0deg);
   }
 }
 
 .card_container {
-  @apply mx-5 grid gap-3 lg:grid-cols-3 md:grid-cols-2 justify-items-center items-center h-full;
+  @apply mx-5 grid gap-3 lg:grid-cols-3 md:grid-cols-2 justify-items-center items-center;
 }
 
 .card {
-  @apply max-w-sm bg-secondary border border-secondary rounded-lg shadow;
+  @apply max-w-sm bg-secondary border border-secondary rounded-lg shadow h-full w-full;
 
-  & a > img {
-    @apply rounded-t-lg h-80 w-full object-cover object-top;
+  & > a > img {
+    @apply rounded-t-lg h-80 w-full object-cover object-bottom;
   }
 
   & > div {
-    @apply p-5;
-    & a > .card_title {
+    @apply p-5 flex flex-col;
+    & > a > .card_title {
       @apply mb-2 text-2xl font-bold tracking-tight text-primary;
     }
 
     & > p {
       @apply mb-3 font-normal text-primary;
     }
-    & > .card_link {
-      @apply inline-flex items-center px-3 py-2 text-sm font-medium text-center text-secondary bg-primary rounded-lg hover:bg-secondary focus:ring-4 focus:outline-none focus:ring-blue-300;
+    & > div > .card_link {
+      @apply inline-flex items-center px-3 py-2 text-sm font-medium text-center text-secondary bg-primary rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300;
     }
   }
 }
@@ -114,6 +118,22 @@ section {
       @apply fill-primary;
     }
   }
+}
+
+.Education_data {
+  @apply py-4 px-5;
+}
+
+.Education_title {
+  @apply text-2xl font-bold;
+}
+
+.Educ_type {
+  @apply text-xl;
+}
+
+.Educ_time {
+  @apply text-lg font-bold;
 }
 
 .contact_data {

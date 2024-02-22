@@ -16,19 +16,20 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
     <div id="root">
       <div class="app">
         <nav class="navbar">
           <a href="" class="log">Kundan</a>
           <a href="" class="nav_menu_icon" onclick="nav()">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" onclick="menu()"></i>
           </a>
           <script>
-            function nav() {}
+            function menu() {
+              const nav = document.getElementById("#nav");
+            }
           </script>
-          <ul class="nav_links">
+          <ul class="nav_links" id="nav">
             <li class="Home"><a href="#Home">Home</a></li>
             <li class="About"><a href="#About">About</a></li>
             <li class="Work"><a href="#Work">Work</a></li>
@@ -36,7 +37,20 @@
             <li class="Contact"><a href="#Contact">Contact</a></li>
           </ul>
         </nav>
-        <section id="Home"></section>
+        <section id="Home">
+          <div
+            class="flex flex-col items-center h-[85vh] w-full justify-center"
+          >
+            <h2 class="text-3xl font-bold">Hello,I'm</h2>
+            <h2 class="text-4xl font-bold text-yellow-400">
+              Full Stack <span class="text-blue-500">Developer</span>
+            </h2>
+            <p class="text-xl mt-10 max-w-96 text-center">
+              Hi I'm Kundan Patel, a passionate Full stack Developer based in
+              Ahmedabad,Welcome to my Portfolio.
+            </p>
+          </div>
+        </section>
         <section id="About" class="justify-evenly">
           <h2 class="title_of_page">About</h2>
           <div class="about_hero md:flex m-10 h-full items-center">
@@ -57,9 +71,9 @@
             <div class="about_img md:w-1/2 flex justify-center">
               <div class="bubble_bg w-4/6 aspect-square flex justify-center">
                 <img
-                  src="https://res.cloudinary.com/ddffgfse1/image/upload/v1705986605/Portfolio/About_Image.png"
+                  src="https://res.cloudinary.com/ddffgfse1/image/upload/v1708580210/Portfolio/About_Image.jpg"
                   alt="image"
-                  class="rounded-full"
+                  class=""
                 />
               </div>
             </div>
@@ -70,36 +84,53 @@
           <div class="card_container">
             <!-- Project 1 -->
             <div class="card">
-              <a href="#">
+              <a href="https://github.com/Kunds-patel/TodoWeb" target="_blank">
                 <img
-                  src="https://res.cloudinary.com/ddffgfse1/image/upload/v1705986605/Portfolio/Project_ex.jpg"
+                  src="https://res.cloudinary.com/ddffgfse1/image/upload/v1708581299/Portfolio/TodoWeb.png"
                   alt=""
                 />
               </a>
               <div class="card_details">
-                <a href="#">
-                  <h5 class="card_title">
-                    Noteworthy technology acquisitions 2021
-                  </h5>
+                <a
+                  href="https://github.com/Kunds-patel/TodoWeb"
+                  target="_blank"
+                >
+                  <h5 class="card_title">My Todo Website</h5>
                 </a>
                 <p>
-                  Here are the biggest enterprise technology acquisitions of
-                  2021 so far, in reverse chronological order.
+                  Proficient in building TodoWeb applications with React,
+                  integrating Postman API calls, and adept in local storage
+                  management and rendering techniques. Utilized Shadcn
+                  components for streamlined implementation.
                 </p>
-                <a href="#" class="card_link"> GitHub Link </a>
-                <a href="#" class="card_link"> Live </a>
+                <div>
+                  <a
+                    href="https://github.com/Kunds-patel/TodoWeb"
+                    class="card_link"
+                    target="_blank"
+                  >
+                    GitHub Link
+                  </a>
+                  <a
+                    href="https://github.com/Kunds-patel/TodoWeb"
+                    class="card_link"
+                    target="_blank"
+                  >
+                    Live
+                  </a>
+                </div>
               </div>
             </div>
             <!-- Project 2 -->
             <div class="card">
-              <a href="#">
+              <a href="#" target="_blank">
                 <img
                   src="https://res.cloudinary.com/ddffgfse1/image/upload/v1705986605/Portfolio/Project_ex.jpg"
                   alt=""
                 />
               </a>
               <div class="card_details">
-                <a href="#">
+                <a href="#" target="_blank">
                   <h5 class="card_title">
                     Noteworthy technology acquisitions 2021
                   </h5>
@@ -108,30 +139,51 @@
                   Here are the biggest enterprise technology acquisitions of
                   2021 so far, in reverse chronological order.
                 </p>
-                <a href="#" class="card_link"> GitHub Link </a>
-                <a href="#" class="card_link"> Live </a>
+                <div>
+                  <a href="#" class="card_link" target="_blank">
+                    GitHub Link
+                  </a>
+                  <a href="#" class="card_link" target="_blank"> Live </a>
+                </div>
               </div>
             </div>
             <!-- Project 3 -->
             <div class="card">
-              <a href="#">
+              <a href="https://kunds-patel.github.io/Sneakers/" target="_blank">
                 <img
-                  src="https://res.cloudinary.com/ddffgfse1/image/upload/v1705986605/Portfolio/Project_ex.jpg"
+                  src="https://media.licdn.com/dms/image/D4D22AQEf-0oVSpgs7g/feedshare-shrink_1280/0/1705821720726?e=1711584000&v=beta&t=XwHc-avxzLFL31SEAjsK1fYu9JIzOyqXB1zB_Q4ckec"
                   alt=""
                 />
               </a>
               <div class="card_details">
-                <a href="#">
-                  <h5 class="card_title">
-                    Noteworthy technology acquisitions 2021
-                  </h5>
+                <a
+                  href="https://kunds-patel.github.io/Sneakers/"
+                  target="_blank"
+                >
+                  <h5 class="card_title">Sneaker e-commerce Main Page</h5>
                 </a>
-                <p>
-                  Here are the biggest enterprise technology acquisitions of
-                  2021 so far, in reverse chronological order.
+                <p class="">
+                  Thrilled to share the culmination of hard work and dedication
+                  in bringing my vision to life! 🎉 With HTML, CSS, JS, and the
+                  magic of TailwindCSS, I've created a sleek Sneaker e-commerce
+                  main page that I'm truly proud of.
                 </p>
-                <a href="#" class="card_link"> GitHub Link </a>
-                <a href="#" class="card_link"> Live </a>
+                <div>
+                  <a
+                    target="_blank"
+                    href="https://github.com/Kunds-patel/Sneakers"
+                    class="card_link"
+                  >
+                    GitHub Link
+                  </a>
+                  <a
+                    href="https://kunds-patel.github.io/Sneakers/"
+                    class="card_link"
+                    target="_blank"
+                  >
+                    Live
+                  </a>
+                </div>
               </div>
             </div>
             <!-- Project 4
@@ -221,7 +273,7 @@
                 </div>
                 <div class="skill">
                   <svg
-                    fill="#6E57E0"
+                    fill="#ffffff"
                     width="4em"
                     height="4em"
                     viewBox="0 0 24 24"
@@ -255,7 +307,7 @@
                     viewBox="0,0,256,256"
                     width="4em"
                     height="4em"
-                    fill="#6E57E0"
+                    fill="#ffffff"
                   >
                     <g
                       fill-rule="nonzero"
@@ -294,34 +346,38 @@
               class="Education_details md:w-1/2 w-full h-full flex items-center"
             >
               <div class="ml-6 md:border-l-4 border-secondary h-4/5">
-                <div>
+                <div class="Education_data">
                   <div>
-                    <h2>Nishan Vidhyalay</h2>
-                    <p>10th GSEB</p>
+                    <h2 class="Education_title">Nishan Vidhyalay</h2>
+                    <p class="Educ_type">10th GSEB</p>
                   </div>
                   <div>
-                    <h3>Aug. 2007 -- May 2018</h3>
-                    <p></p>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <h2>Mangaldeep Higher Secondary</h2>
-                    <p>12th GSEB</p>
-                  </div>
-                  <div>
-                    <h3>Aug. 2018 -- May 2020</h3>
-                    <p></p>
+                    <h3 class="Educ_time">Aug. 2007 -- May 2018</h3>
+                    <p>Percentage : 72%</p>
                   </div>
                 </div>
-                <div>
+                <div class="Education_data">
                   <div>
-                    <h2>Ahmedabad Institute of Technology</h2>
-                    <p>Bachelor of Engineering, Information Technology</p>
+                    <h2 class="Education_title">Mangaldeep Higher Secondary</h2>
+                    <p class="Educ_type">12th GSEB</p>
                   </div>
                   <div>
-                    <h3>Aug. 2020 -- May 2024</h3>
-                    <p>CGPA</p>
+                    <h3 class="Educ_time">Aug. 2018 -- May 2020</h3>
+                    <p>Percentage : 54%</p>
+                  </div>
+                </div>
+                <div class="Education_data">
+                  <div>
+                    <h2 class="Education_title">
+                      Ahmedabad Institute of Technology
+                    </h2>
+                    <p class="Educ_type">
+                      Bachelor of Engineering, Information Technology
+                    </p>
+                  </div>
+                  <div>
+                    <h3 class="Educ_time">Aug. 2020 -- May 2024</h3>
+                    <p>CGPA : 8.62</p>
                   </div>
                 </div>
               </div>
