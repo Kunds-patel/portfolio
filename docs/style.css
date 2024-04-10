@@ -121,21 +121,27 @@ section {
 }
 
 .Education_data {
-  @apply py-4 px-5;
+  @apply py-4;
 }
 
 .Education_title {
-  @apply text-2xl font-bold;
+  @apply text-2xl font-bold bg-secondary text-primary pl-10 relative;
+
+  &::before {
+    @apply h-6 aspect-square rounded-full bg-orange-600 absolute top-0;
+  }
 }
 
 .Educ_type {
-  @apply text-xl;
+  @apply text-xl px-10;
 }
 
 .Educ_time {
   @apply text-lg font-bold;
 }
-
+.Edu_bottom {
+  @apply px-10;
+}
 .contact_data {
   @apply md:flex rounded-3xl;
 }

@@ -37,18 +37,28 @@
             <li class="Contact"><a href="#Contact">Contact</a></li>
           </ul>
         </nav>
-        <section id="Home">
-          <div
-            class="flex flex-col items-center h-[85vh] w-full justify-center"
-          >
-            <h2 class="text-3xl font-bold">Hello,I'm</h2>
-            <h2 class="text-4xl font-bold text-yellow-400">
-              Full Stack <span class="text-blue-500">Developer</span>
-            </h2>
-            <p class="text-xl mt-10 max-w-96 text-center">
-              Hi I'm Kundan Patel, a passionate Full stack Developer based in
-              Ahmedabad,Welcome to my Portfolio.
-            </p>
+        <section id="Home" class="h-[90vh]">
+          <div class="md:flex h-[85vh]">
+            <div
+              class="flex flex-col items-center md:h-full flex-1 justify-center text-center"
+            >
+              <h2 class="text-3xl font-bold">Hello,I'm</h2>
+              <h2 class="text-4xl font-bold text-yellow-400">
+                Full Stack <span class="text-blue-500">Developer</span>
+              </h2>
+              <p class="text-xl mt-10 max-w-96 text-center">
+                Hi I'm Kundan Patel, a passionate Full stack Developer based in
+                Ahmedabad,Welcome to my Portfolio.
+              </p>
+            </div>
+            <div class="flex-1 w-2/3 aspect-square">
+              <img
+                class="w-4/5 aspect-square"
+                src="../assets/Banner_image.svg"
+                alt="#Banner"
+                title="Banner"
+              />
+            </div>
           </div>
         </section>
         <section id="About" class="justify-evenly">
@@ -87,7 +97,8 @@
               <a href="https://github.com/Kunds-patel/TodoWeb" target="_blank">
                 <img
                   src="https://res.cloudinary.com/ddffgfse1/image/upload/v1708581299/Portfolio/TodoWeb.png"
-                  alt=""
+                  alt="TodoWebBanner"
+                  title="TodoWebBanner"
                 />
               </a>
               <div class="card_details">
@@ -125,19 +136,21 @@
             <div class="card">
               <a href="#" target="_blank">
                 <img
-                  src="https://res.cloudinary.com/ddffgfse1/image/upload/v1705986605/Portfolio/Project_ex.jpg"
-                  alt=""
+                  src="https://res.cloudinary.com/ddffgfse1/image/upload/v1712734299/Portfolio/BeaYou.png"
+                  alt="BeayouBanner"
+                  title="BeayouBanner"
                 />
               </a>
               <div class="card_details">
                 <a href="#" target="_blank">
-                  <h5 class="card_title">
-                    Noteworthy technology acquisitions 2021
-                  </h5>
+                  <h5 class="card_title">Bea You E-Commerce Website</h5>
                 </a>
                 <p>
-                  Here are the biggest enterprise technology acquisitions of
-                  2021 so far, in reverse chronological order.
+                  Using ReactJS, TailwindCSS, and ContextAPI, I'm crafting a
+                  platform that offers a seamless shopping experience. The core
+                  feature includes a robust cart system with CRUD operations,
+                  ensuring users can easily manage their purchases. Stay tuned
+                  for an engaging and user-friendly interface!
                 </p>
                 <div>
                   <a href="#" class="card_link" target="_blank">
@@ -151,8 +164,9 @@
             <div class="card">
               <a href="https://kunds-patel.github.io/Sneakers/" target="_blank">
                 <img
-                  src="https://media.licdn.com/dms/image/D4D22AQEf-0oVSpgs7g/feedshare-shrink_1280/0/1705821720726?e=1711584000&v=beta&t=XwHc-avxzLFL31SEAjsK1fYu9JIzOyqXB1zB_Q4ckec"
-                  alt=""
+                  src="https://res.cloudinary.com/ddffgfse1/image/upload/v1712734298/Portfolio/SneakersPage.jpg"
+                  alt="SenakersWebPage"
+                  title="SenakersWebPage"
                 />
               </a>
               <div class="card_details">
@@ -163,10 +177,10 @@
                   <h5 class="card_title">Sneaker e-commerce Main Page</h5>
                 </a>
                 <p class="">
-                  Thrilled to share the culmination of hard work and dedication
-                  in bringing my vision to life! 🎉 With HTML, CSS, JS, and the
-                  magic of TailwindCSS, I've created a sleek Sneaker e-commerce
-                  main page that I'm truly proud of.
+                  This project focuses on enhancing design skills by creating a
+                  Product Detail page using HTML, CSS, and JavaScript. The page
+                  will display essential product information, images, and
+                  interactive elements for users.
                 </p>
                 <div>
                   <a
@@ -345,13 +359,13 @@
             <div
               class="Education_details md:w-1/2 w-full h-full flex items-center"
             >
-              <div class="ml-6 md:border-l-4 border-secondary h-4/5">
+              <div class="ml-6 md:border-l-2 border-secondary h-4/5">
                 <div class="Education_data">
                   <div>
                     <h2 class="Education_title">Nishan Vidhyalay</h2>
                     <p class="Educ_type">10th GSEB</p>
                   </div>
-                  <div>
+                  <div class="Edu_bottom">
                     <h3 class="Educ_time">Aug. 2007 -- May 2018</h3>
                     <p>Percentage : 72%</p>
                   </div>
@@ -361,7 +375,7 @@
                     <h2 class="Education_title">Mangaldeep Higher Secondary</h2>
                     <p class="Educ_type">12th GSEB</p>
                   </div>
-                  <div>
+                  <div class="Edu_bottom">
                     <h3 class="Educ_time">Aug. 2018 -- May 2020</h3>
                     <p>Percentage : 54%</p>
                   </div>
@@ -375,7 +389,7 @@
                       Bachelor of Engineering, Information Technology
                     </p>
                   </div>
-                  <div>
+                  <div class="Edu_bottom">
                     <h3 class="Educ_time">Aug. 2020 -- May 2024</h3>
                     <p>CGPA : 8.62</p>
                   </div>
