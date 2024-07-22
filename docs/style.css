@@ -70,7 +70,7 @@ section {
     rgba(25, 22, 39, 40) 0%,
     rgba(300, 300, 300, 40) 100%
   );
-  animation: rotate 25s infinite;
+  /* animation: rotate 25s infinite; */
 }
 
 @keyframes rotate {
@@ -87,7 +87,7 @@ section {
 }
 
 .card {
-  @apply max-w-sm bg-secondary border border-secondary rounded-lg shadow h-full w-full;
+  @apply max-w-sm bg-secondary border border-secondary rounded-lg shadow h-full w-full bg-primary;
 
   & > a > img {
     @apply rounded-t-lg h-80 w-full object-cover object-bottom;
@@ -96,14 +96,14 @@ section {
   & > div {
     @apply p-5 flex flex-col;
     & > a > .card_title {
-      @apply mb-2 text-2xl font-bold tracking-tight text-primary;
+      @apply mb-2 text-2xl font-bold tracking-tight;
     }
 
     & > p {
-      @apply mb-3 font-normal text-primary;
+      @apply mb-3 font-normal;
     }
     & > div > .card_link {
-      @apply inline-flex items-center px-3 py-2 text-sm font-medium text-center text-secondary bg-primary rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300;
+      @apply inline-flex items-center px-3 py-2 text-sm font-medium text-center text-primary bg-secondary rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300;
     }
   }
 }
