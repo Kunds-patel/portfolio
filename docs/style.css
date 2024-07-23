@@ -87,7 +87,7 @@ section {
 }
 
 .card {
-  @apply max-w-sm bg-secondary border border-secondary rounded-lg shadow h-full w-full bg-primary;
+  @apply max-w-sm text-secondary border border-secondary rounded-lg shadow h-full w-full bg-primary;
 
   & > a > img {
     @apply rounded-t-lg h-80 w-full object-cover object-bottom;
